@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,6 @@ Route::get(
 );
 
 Route::get('/admin', DashboardController::class)->name('dashboard');
+
+Route::get('/login', LoginController::class)->name('login');
 
